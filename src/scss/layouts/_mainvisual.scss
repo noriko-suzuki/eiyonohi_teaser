@@ -47,7 +47,7 @@
   transform: scale(0);
 
   .l-mainvisual.is-animated & {
-    animation: bounce-new 0.3s 1.8s ease 1;
+    animation: bounce-new 0.3s 1.6s ease 1;
     animation-fill-mode: forwards;
   }
 }
@@ -59,7 +59,7 @@
   position: absolute;
   top: 0;
   left: 140px;
-  transition: width 3s $easeOutExpo 2.5s;
+  transition: width 2s $easeOutExpo 2s;
 
   span {
     display: block;
@@ -71,7 +71,6 @@
 
   .l-mainvisual.is-animated & {
     width: 100%;
-    animation: width-text 3s $easeOutExpo 2.5s;
   }
 }
 
@@ -84,7 +83,7 @@
   left: 0;
   margin: auto;
   opacity: 0;
-  transition: opacity 0.5s linear 4.4s;
+  transition: opacity 0.5s linear 2.6s;
 
   .l-mainvisual.is-animated & {
     opacity: 1;
@@ -99,7 +98,7 @@
   margin: auto;
   text-align: center;
   opacity: 0;
-  transition: opacity 0.5s linear 4.6s;
+  transition: opacity 0.5s linear 2.8s;
 
   .l-mainvisual.is-animated & {
     opacity: 1;
@@ -115,7 +114,7 @@
   color: $color-gray01;
   letter-spacing: 0.1em;
   transform: translate3d(0, 100px, 0);
-  transition: transform 1.2s $easeOutExpo 5s;
+  transition: transform 0.6s $easeOutExpo 3s;
 
   .l-mainvisual.is-animated & {
     transform: translate3d(0, 0, 0);
@@ -127,7 +126,7 @@
   right: 40px;
   bottom: 40px;
   transform: translate3d(0, 100px, 0);
-  transition: transform 1.2s $easeOutExpo 5s;
+  transition: transform 0.6s $easeOutExpo 3s;
   
   .l-mainvisual.is-animated & {
     transform: translate3d(0, 0, 0);
@@ -135,7 +134,7 @@
 }
 
 $duration: 0.4s;
-$delay: 3.4s;
+$delay: 2.4s;
 
 %l-mainvisual__border {
   position: absolute;
@@ -199,19 +198,13 @@ $delay: 3.4s;
   left: 5px;
   transform-origin: 100% 100%;
   transform: scaleY(0);
-  transition-duration: .6s;
+  transition-duration: 0.6s;
   transition-timing-function: $easeOutExpo;
   transition-delay: $duration * 4 + $delay;
 
   .l-mainvisual.is-animated & {
     transform: scaleY(1);
   }
-}
-
-@keyframes width-text{
-  0%{ width:0%; }
-  30%{ width: 47%; }
-  100%{ width: 100%; }
 }
 
 @keyframes bounce-new {
